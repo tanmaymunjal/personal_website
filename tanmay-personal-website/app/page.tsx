@@ -3,6 +3,7 @@
 import React, { useState, useEffect } from 'react';
 import LoadingVideo from './components/LoadingVideo.js';
 import Header from './components/Header.js';
+import Introduction from "./components/Introduction.js";
 
 export default function Home()  {
   const [loading, setLoading] = useState(true);
@@ -41,7 +42,8 @@ export default function Home()  {
         )
          : (
         <div>
-          <Header/>       
+          <Header/>   
+          <Introduction/>    
         </div>
       )}
     </>

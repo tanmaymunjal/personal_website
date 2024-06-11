@@ -29,7 +29,7 @@ const LoadingVideo = ({ onVideoLoaded }) => {
   return (
     <div className={styles.videoContainer}>
       <video ref={videoRef} autoPlay muted className={styles.video}>
-        <source src="./testing.mp4" type="video/mp4" />
+        <source src="./terminal.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
     </div>
