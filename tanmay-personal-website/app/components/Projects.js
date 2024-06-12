@@ -29,7 +29,7 @@ export default function About() {
                 src="/icons/onfinance.png"
                 alt="OnFinance Project"
                 width={800}
-                height={533}
+                height={400}
                 className="w-full h-full mb-4"
               />
             </div>
@@ -44,7 +44,7 @@ export default function About() {
                 src="/icons/trap_dungeon2.webp"
                 alt="Trap Dungeon2"
                 width={800}
-                height={533}
+                height={400}
                 className="w-full h-full mb-4"
               />
             </div>
@@ -59,7 +59,7 @@ export default function About() {
                 src="/icons/pdf_gpt.png"
                 alt="PDF GPT"
                 width={800}
-                height={533}
+                height={400}
                 className="w-full h-full mb-4"
               />
             </div>
@@ -74,7 +74,7 @@ export default function About() {
                 src="/icons/nhl_uais.png"
                 alt="NHL UAIS"
                 width={800}
-                height={533}
+                height={400}
                 className="w-full h-full mb-4"
               />
             </div>
