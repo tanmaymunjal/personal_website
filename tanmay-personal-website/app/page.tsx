@@ -8,6 +8,7 @@ import About from "./components/About";
 import Skills from "./components/Skills";
 import Work from "./components/Work";
 import Contact from "./components/Contact.js";
+import Projects from "./components/Projects.js";
 
 export default function Home() {
   const [loading, setLoading] = useState(true);
@@ -50,6 +51,7 @@ export default function Home() {
           <About />
           <Skills />
           {/* <Work /> */}
+          <Projects/>
           <Contact />
         </div>
       )}
