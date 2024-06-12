@@ -34,7 +34,7 @@ export default function Home()  {
         <LoadingVideo onVideoLoaded={handleVideoLoaded} />
         <button 
           onClick={handleSkipAnimation} 
-          className="absolute bottom-10 right-8 text-white py-2 px-4 my-4 mx-2 rounded hover:bg-blue-700 transition duration-300"
+          className="absolute bottom-10 right-8 text-white py-2 px-4 my-6 mx-6 rounded hover:bg-blue-700 transition duration-300 text-3xl"
         >
           Skip Animation
         </button>
