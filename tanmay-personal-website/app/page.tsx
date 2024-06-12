@@ -1,7 +1,7 @@
 "use client"; // Ensure the component runs in the client-side
 
 import React, { useState, useEffect } from "react";
-import LoadingVideo from "./components/LoadingVideo";
+import LoadingVideo from "./components/LoadingVideo.js";
 import Header from "./components/Header";
 import Introduction from "./components/Introduction";
 import About from "./components/About";
