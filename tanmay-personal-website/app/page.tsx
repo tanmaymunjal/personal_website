@@ -1,14 +1,14 @@
-'use client'; // Ensure the component runs in the client-side
+"use client"; // Ensure the component runs in the client-side
 
-import React, { useState, useEffect } from 'react';
-import LoadingVideo from './components/LoadingVideo.js';
-import Header from './components/Header.js';
-import Introduction from "./components/Introduction.js";
-import About from "./components/About.js";
-import Skills from "./components/Skills.js";
-import Work from "./components/Work.js";
+import React, { useState, useEffect } from "react";
+import LoadingVideo from "./components/LoadingVideo";
+import Header from "./components/Header";
+import Introduction from "./components/Introduction";
+import About from "./components/About";
+import Skills from "./components/Skills";
+import Work from "./components/Work";
 
-export default function Home()  {
+export default function Home() {
   const [loading, setLoading] = useState(true);
   const [videoDuration, setVideoDuration] = useState(1000);
 
@@ -34,22 +34,21 @@ export default function Home()  {
     <>
       {loading ? (
         <div className="relative flex flex-col items-center justify-center min-h-screen">
-        <LoadingVideo onVideoLoaded={handleVideoLoaded} />
-        <button 
-          onClick={handleSkipAnimation} 
-          className="absolute bottom-10 right-8 text-white py-2 px-4 my-6 mx-6 rounded hover:bg-blue-700 transition duration-300 text-3xl"
-        >
-          Skip Animation
-        </button>
-      </div>
-        )
-         : (
+          <LoadingVideo onVideoLoaded={handleVideoLoaded} />
+          <button
+            onClick={handleSkipAnimation}
+            className="absolute bottom-10 right-8 text-white py-2 px-4 my-6 mx-6 rounded hover:bg-blue-700 transition duration-300 text-3xl"
+          >
+            Skip Animation
+          </button>
+        </div>
+      ) : (
         <div>
-          <Header/>   
-          <Introduction/>    
-          <About/>
-          <Skills/>
-          <Work/>
+          <Header />
+          <Introduction />
+          <About />
+          <Skills />
+          <Work />
         </div>
       )}
     </>

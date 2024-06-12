@@ -1,20 +1,18 @@
-'use client'; // Ensure the component runs in the client-side
+"use client"; // Ensure the component runs in the client-side
 
-import React, { useRef, useEffect } from 'react';
-import styles from './LoadingVideo.module.css';
+import React, { useRef, useEffect } from "react";
+import styles from "./LoadingVideo.module.css";
 
 const LoadingVideo = ({ onVideoLoaded }) => {
   const videoRef = useRef(null);
 
-
   useEffect(() => {
-
     const handleLoadedMetadata = () => {
       onVideoLoaded(videoElement.duration);
     };
 
     const videoElement = videoRef.current;
-    videoElement.addEventListener('loadedmetadata', handleLoadedMetadata);
+    videoElement.addEventListener("loadedmetadata", handleLoadedMetadata);
 
     // checks to see if browser rushed to fast to listen to load metadata evnt
     if (videoElement.readyState >= 2) {
@@ -22,7 +20,7 @@ const LoadingVideo = ({ onVideoLoaded }) => {
     }
 
     return () => {
-        videoElement.removeEventListener('loadedmetadata', handleLoadedMetadata);
+      videoElement.removeEventListener("loadedmetadata", handleLoadedMetadata);
     };
   }, [onVideoLoaded]);
 
