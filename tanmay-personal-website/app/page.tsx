@@ -6,7 +6,6 @@ import Header from "./components/Header";
 import Introduction from "./components/Introduction";
 import About from "./components/About";
 import Skills from "./components/Skills";
-import Work from "./components/Work";
 import Contact from "./components/Contact.js";
 import Projects from "./components/Projects.js";
 
@@ -50,9 +49,10 @@ export default function Home() {
           <Introduction />
           <About />
           <Skills />
-          {/* <Work /> */}
-          <Projects/>
+          <Projects />
           <Contact />
+          <br></br>
+          <br></br>
         </div>
       )}
     </>

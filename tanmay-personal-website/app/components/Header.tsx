@@ -1,7 +1,7 @@
 import React from "react";
 
 export default function Header() {
-  const sections = ["About", "Skills", "Work", "Projects", "Contact", "Resume"];
+  const sections = ["About", "Skills", "Projects", "Contact", "Resume"];
   const handleResumeClick = () => {
     const link = document.createElement("a");
     link.href = "./resume.pdf"; // Replace with the actual path to your resume file

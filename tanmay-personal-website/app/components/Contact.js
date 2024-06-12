@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function Contact() {
   const handleEmailSubmit = (event) => {
     event.preventDefault();
@@ -12,7 +14,7 @@ export default function Contact() {
   };
 
   return (
-    <div className="mt-36 mx-60" id="contact">
+    <div className="mt-24 mx-60" id="contact">
       <div className="flex items-center">
         <p className="font-serif text-8xl font-extrabold text-shadow-lg text-yellow-300">
           Contact
@@ -37,10 +39,11 @@ export default function Contact() {
                 rel="noopener noreferrer"
                 className="flex items-center"
               >
-                <img
-                  src="./icons/github.webp"
+                <Image
+                  src="/icons/github.webp"
                   alt="GitHub"
-                  className="w-8 h-8"
+                  width={32}
+                  height={32}
                 />
                 <p className="ml-4 text-2xl">tanmaymunjal</p>
               </a>
@@ -50,7 +53,12 @@ export default function Contact() {
                 href="mailto:tanmaymunjal64@gmail.com"
                 className="flex items-center"
               >
-                <img src="./icons/gmail.webp" alt="Email" className="w-8 h-8" />
+                <Image
+                  src="/icons/gmail.webp"
+                  alt="Email"
+                  width={32}
+                  height={32}
+                />
                 <p className="ml-4 text-2xl">tanmaymunjal64@gmail.com</p>
               </a>
             </div>
@@ -61,10 +69,11 @@ export default function Contact() {
                 rel="noopener noreferrer"
                 className="flex items-center"
               >
-                <img
-                  src="./icons/linkedin.webp"
+                <Image
+                  src="/icons/linkedin.webp"
                   alt="LinkedIn"
-                  className="w-8 h-8"
+                  width={32}
+                  height={32}
                 />
                 <p className="ml-4 text-2xl">Tanmay Munjal</p>
               </a>

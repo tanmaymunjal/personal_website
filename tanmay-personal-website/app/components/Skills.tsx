@@ -1,3 +1,6 @@
+import React from "react";
+import Image from "next/image";
+
 export default function Skills() {
   return (
     <div className="mt-36 mx-60 mb-20" id="skills">
@@ -18,41 +21,51 @@ export default function Skills() {
           <div className="grid grid-cols-2 gap-10 items-center">
             <div className="space-y-6">
               <div className="flex items-center">
-                <img
-                  src="./icons/ts.svg"
+                <Image
+                  src="/icons/ts.svg"
                   alt="TypeScript"
+                  width={32}
+                  height={32}
                   className="w-8 h-8 mr-4 transition-transform transform hover:scale-150"
                 />
                 <span>TypeScript</span>
               </div>
               <div className="flex items-center">
-                <img
-                  src="./icons/js.svg"
+                <Image
+                  src="/icons/js.svg"
                   alt="JavaScript"
+                  width={32}
+                  height={32}
                   className="w-8 h-8 mr-4 transition-transform transform hover:scale-150"
                 />
                 <span>JavaScript</span>
               </div>
               <div className="flex items-center">
-                <img
-                  src="./icons/python.svg"
+                <Image
+                  src="/icons/python.svg"
                   alt="Python"
+                  width={32}
+                  height={32}
                   className="w-8 h-8 mr-4 transition-transform transform hover:scale-150"
                 />
                 <span>Python</span>
               </div>
               <div className="flex items-center">
-                <img
-                  src="./icons/rust.svg"
+                <Image
+                  src="/icons/rust.svg"
                   alt="Rust"
+                  width={32}
+                  height={32}
                   className="w-8 h-8 mr-4 transition-transform transform hover:scale-150"
                 />
                 <span>Rust</span>
               </div>
               <div className="flex items-center">
-                <img
-                  src="./icons/c.svg"
+                <Image
+                  src="/icons/c.svg"
                   alt="C"
+                  width={32}
+                  height={32}
                   className="w-8 h-8 mr-4 transition-transform transform hover:scale-150"
                 />
                 <span>C</span>
@@ -62,41 +75,51 @@ export default function Skills() {
               <div className="absolute left-0 top-0 bottom-0 w-1 bg-green-600"></div>
               <div className="space-y-6 ml-10">
                 <div className="flex items-center">
-                  <img
-                    src="./icons/html.svg"
+                  <Image
+                    src="/icons/html.svg"
                     alt="HTML"
+                    width={32}
+                    height={32}
                     className="w-8 h-8 mr-4 transition-transform transform hover:scale-150"
                   />
                   <span>HTML</span>
                 </div>
                 <div className="flex items-center">
-                  <img
-                    src="./icons/vue.svg"
+                  <Image
+                    src="/icons/vue.svg"
                     alt="Vue.js"
+                    width={32}
+                    height={32}
                     className="w-8 h-8 mr-4 transition-transform transform hover:scale-150"
                   />
                   <span>Vue.js</span>
                 </div>
                 <div className="flex items-center">
-                  <img
-                    src="./icons/react.svg"
+                  <Image
+                    src="/icons/react.svg"
                     alt="React"
+                    width={32}
+                    height={32}
                     className="w-8 h-8 mr-4 transition-transform transform hover:scale-150"
                   />
                   <span>React</span>
                 </div>
                 <div className="flex items-center">
-                  <img
-                    src="./icons/node.svg"
+                  <Image
+                    src="/icons/node.svg"
                     alt="Node.js"
+                    width={32}
+                    height={32}
                     className="w-8 h-8 mr-4 transition-transform transform hover:scale-150"
                   />
                   <span>Node.js</span>
                 </div>
                 <div className="flex items-center">
-                  <img
-                    src="./icons/tailwind.svg"
+                  <Image
+                    src="/icons/tailwind.svg"
                     alt="Tailwind"
+                    width={32}
+                    height={32}
                     className="w-8 h-8 mr-4 transition-transform transform hover:scale-150"
                   />
                   <span>Tailwind</span>

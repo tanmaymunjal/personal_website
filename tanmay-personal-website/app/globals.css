@@ -35,5 +35,6 @@ body {
 }
 
 html {
+  background-color: black !important;
   scroll-behavior: smooth;
 }

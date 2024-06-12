@@ -1,5 +1,6 @@
-import React from 'react';
-import Slider from 'react-slick';
+import React from "react";
+import Slider from "react-slick";
+import Image from "next/image"; // Import the Image component from next/image
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
@@ -23,20 +24,64 @@ export default function About() {
       <div className="ml-16 mt-12">
         <Slider {...settings}>
           <div className="flex flex-col items-center">
-            <img src="./icons/onfinance.png" alt="OnFinance Project" className="w-full h-full mb-4"/>
-            <p className="font-serif text-lg text-center mt-2 mb-0">Built the mobile app for OnFinance that garnered over 150k+ Downloads on the Play Store!</p>
+            <div className="w-full h-full">
+              <Image
+                src="/icons/onfinance.png"
+                alt="OnFinance Project"
+                width={800}
+                height={533}
+                className="w-full h-full mb-4"
+              />
+            </div>
+            <p className="font-serif text-lg text-center mt-2 mb-0">
+              Built the mobile app for OnFinance that garnered over 150k+
+              Downloads on the Play Store!
+            </p>
           </div>
           <div className="flex flex-col items-center">
-            <img src="./icons/trap_dungeon2.webp" alt="Trap Dungeon2" className="w-full h-full mb-4"/>
-            <p className="font-serif text-lg text-center mt-2 mb-0">Improved the user dynamics for Trap Dungeon 2 game garnering over 5 million installs!</p>
+            <div className="w-full h-full">
+              <Image
+                src="/icons/trap_dungeon2.webp"
+                alt="Trap Dungeon2"
+                width={800}
+                height={533}
+                className="w-full h-full mb-4"
+              />
+            </div>
+            <p className="font-serif text-lg text-center mt-2 mb-0">
+              Improved the user dynamics for Trap Dungeon 2 game garnering over
+              5 million installs!
+            </p>
           </div>
           <div className="flex flex-col items-center">
-            <img src="./icons/pdf_gpt.png" alt="PDF GPT" className="w-full h-full mb-4"/>
-            <p className="font-serif text-lg text-center mt-2 mb-0">Built the MVP of PDF GPT, an application that takes in your documents and automatically summarises them for you!</p>
+            <div className="w-full h-full">
+              <Image
+                src="/icons/pdf_gpt.png"
+                alt="PDF GPT"
+                width={800}
+                height={533}
+                className="w-full h-full mb-4"
+              />
+            </div>
+            <p className="font-serif text-lg text-center mt-2 mb-0">
+              Built the MVP of PDF GPT, an application that takes in your
+              documents and automatically summarizes them for you!
+            </p>
           </div>
           <div className="flex flex-col items-center">
-            <img src="./icons/nhl_uais.png" alt="PDF GPT" className="w-full h-full mb-4"/>
-            <p className="font-serif text-lg text-center mt-2 mb-0">Fine-tuned a RoBERTa model on Canadian Hockey slang, making it able to judge the sentiment of hockey fans in real time!</p>
+            <div className="w-full h-full">
+              <Image
+                src="/icons/nhl_uais.png"
+                alt="NHL UAIS"
+                width={800}
+                height={533}
+                className="w-full h-full mb-4"
+              />
+            </div>
+            <p className="font-serif text-lg text-center mt-2 mb-0">
+              Fine-tuned a RoBERTa model on Canadian Hockey slang, making it
+              able to judge the sentiment of hockey fans in real time!
+            </p>
           </div>
         </Slider>
         <span className="text-6xl text-green-600">{"}"}</span>
