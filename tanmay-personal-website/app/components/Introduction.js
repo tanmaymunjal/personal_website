@@ -18,10 +18,22 @@ export default function Introduction() {
                     {text}
                     <Cursor cursorStyle="|" />
                 </p>     
-                <p> lopsum ipsum </p>
-                <br></br>
-                <button className="bg-yellow-300 text-black font-bold py-4 px-8 rounded-lg text-2xl mt-4 mr-10 hover:bg-black hover:text-yellow-300">Contact Me</button>
-                <button className="bg-yellow-300 text-black font-bold py-4 px-8 rounded-lg text-2xl mt-4 hover:bg-black hover:text-yellow-300">Learn More</button>
+                <p className="font-serif text-xl"> Hey, I am Tanmay Munjal, a full-stack developer with over 2 years of experience helping 
+                    <br></br>early-stage startups build out their MVPs and reach product market fit. 
+                    <br></br>Expert at shipping code at extreme speeds with good code quality!</p>
+                <br />
+                <a 
+                    className="bg-yellow-300 text-black font-bold py-4 px-8 rounded-lg text-3xl mt-4 hover:bg-black hover:text-yellow-300 inline-block text-center mr-12" 
+                    href="#contact"
+                >
+                    Contact Me
+                </a>                
+                <a 
+                    className="bg-yellow-300 text-black font-bold py-4 px-8 rounded-lg text-3xl mt-4 hover:bg-black hover:text-yellow-300 inline-block text-center" 
+                    href="#about"
+                >
+                    Learn More
+                </a>
             </div>
             <div className="flex-1">
                 <img src="./photo.jpeg" alt="My Photo" className="rounded-full w-96 h-96 object-cover" />
