@@ -7,7 +7,7 @@ import Introduction from "./components/Introduction";
 import About from "./components/About";
 import Skills from "./components/Skills";
 import Work from "./components/Work";
-import Contact from "./components/Contact";
+import Contact from "./components/Contact.js";
 
 export default function Home() {
   const [loading, setLoading] = useState(true);
