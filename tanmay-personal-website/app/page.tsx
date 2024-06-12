@@ -4,6 +4,9 @@ import React, { useState, useEffect } from 'react';
 import LoadingVideo from './components/LoadingVideo.js';
 import Header from './components/Header.js';
 import Introduction from "./components/Introduction.js";
+import About from "./components/About.js";
+import Skills from "./components/Skills.js";
+import Work from "./components/Work.js";
 
 export default function Home()  {
   const [loading, setLoading] = useState(true);
@@ -44,6 +47,9 @@ export default function Home()  {
         <div>
           <Header/>   
           <Introduction/>    
+          <About/>
+          <Skills/>
+          <Work/>
         </div>
       )}
     </>
